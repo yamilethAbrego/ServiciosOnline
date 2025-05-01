@@ -47,10 +47,10 @@ const products = [
 ];
 
 const teamMembers = [
-    { id: 1, name: 'Ramos Alvarado, Hernan Ariel', carnet: 'RA15019', contribucion: 'Diseño de la pagina Payment y Contacto', imageUrl: 'img/RA.jpg' },
-    { id: 2, name: 'Alvarado Alvarado, Sindy Alissette', carnet: 'AA22047', contribucion: 'Diseño de la pagina Terminos y condiciones y Payment', imageUrl: 'img/AA.jpg' },
-    { id: 3, name: 'Aquino Gomez, Jorge Bladimir', carnet: 'AG20006', contribucion: 'Diseño de la pagina Equipo Y Quienes somos', imageUrl: 'img/AG.jpg' },
-    { id: 4, name: 'Abrego de la O, Santos Yamileth', carnet: 'AO23007', contribucion: 'Diseño de la pagina inicio, Catalogo y Menu principal', imageUrl: 'img/AO.jpg' }
+    { id: 1, name: 'Ramos Alvarado, Hernan Ariel', carnet: 'RA15019', contribucion: 'Diseño de la página Payment y Contacto. diseño la interfaz grafica de la pagina de contacto, asegurando un diseño responsivo y accesible.', imageUrl: 'img/RA.jpg' },
+    { id: 2, name: 'Alvarado Alvarado, Sindy Alissette', carnet: 'AA22047',  contribucion: 'Diseño de la página Términos y Condiciones y Payment. Redactó y estructuró los textos legales para la sección de términos y condiciones. También contribuyo a la integracion del proceso de pago con imagenes que mejoran la experiencia del usuario.', imageUrl: 'img/AA.jpg' },
+    { id: 3, name: 'Aquino Gomez, Jorge Bladimir', carnet: 'AG20006', contribucion: 'Diseño de la página Equipo y Quiénes somos. Desarrolló la presentación del equipo con imágenes y biografías, y creó una línea de tiempo interactiva para la página de Quiénes somos, destacando la historia de la organización.', imageUrl: 'img/AG.jpg' },
+    { id: 4, name: 'Abrego de la O, Santos Yamileth', carnet: 'AO23007', contribucion: 'Diseño de la página Inicio, Catálogo y Menú Principal. Organizó los elementos visuales del menú principal, añadió efectos interactivos al catálogo.', imageUrl: 'img/AO.jpg' }
 ];
 
 // Estado
@@ -265,13 +265,7 @@ function init() {
     renderProducts();
     renderTeam();
 
-    // Animación inicial para el título
-    anime({
-        targets: 'h1',
-        translateX: [0, 250],
-        duration: isMobile() ? 1000 : 2000, // Duración adaptada a móviles
-        easing: 'easeInOutQuad'
-    });
+
 }
 
 // Iniciar aplicación cuando el DOM esté completamente cargado
